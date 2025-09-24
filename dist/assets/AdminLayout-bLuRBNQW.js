@@ -1,0 +1,26 @@
+import{c as a,a as m,g as x,r as l,H as h,j as e,U as g,O as p}from"./index-GTK1aGXA.js";import{B as b}from"./building-2-CCJi03uo.js";import{C as u}from"./calendar-QonQVWlK.js";/**
+ * @license lucide-react v0.536.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const y=[["path",{d:"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8",key:"5wwlr5"}],["path",{d:"M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z",key:"1d0kgt"}]],f=a("house",y);/**
+ * @license lucide-react v0.536.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const j=[["path",{d:"M4 12h16",key:"1lakjw"}],["path",{d:"M4 18h16",key:"19g7jn"}],["path",{d:"M4 6h16",key:"1o0s65"}]],N=a("menu",j);/**
+ * @license lucide-react v0.536.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const v=[["path",{d:"M5 12h14",key:"1ays0h"}],["path",{d:"M12 5v14",key:"s699le"}]],k=a("plus",v);/**
+ * @license lucide-react v0.536.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const w=[["path",{d:"M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915",key:"1i5ecw"}],["circle",{cx:"12",cy:"12",r:"3",key:"1v7zrd"}]],_=a("settings",w);/**
+ * @license lucide-react v0.536.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const C=[["path",{d:"M18 6 6 18",key:"1bl5f8"}],["path",{d:"m6 6 12 12",key:"d8bk6v"}]],M=a("x",C),R=()=>{const o=m(),d=x();localStorage.getItem("admintoken");const{BACKEND_URL:A,totalRevenue:i,totalBooking:r}=l.useContext(h),[n,t]=l.useState(!1),c=[{id:"dashboard",label:"Dashboard",icon:f,path:"/admin-pannel"},{id:"rooms",label:"All Rooms",icon:b,path:"/admin-pannel/rooms"},{id:"add-room",label:"Add Room",icon:k,path:"/admin-pannel/add-room"},{id:"bookings",label:"Bookings",icon:u,path:"/admin-pannel/bookings"},{id:"guests",label:"Guests",icon:g,path:"/admin-pannel/guests"},{id:"settings",label:"Settings",icon:_,path:"/admin-pannel/settings"}];return e.jsxs("div",{className:"flex h-screen bg-gray-100",children:[e.jsxs("div",{className:`fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:inset-0 ${n?"translate-x-0":"-translate-x-full"}`,children:[e.jsxs("div",{className:"flex items-center justify-between h-16 px-6 border-b border-gray-200",children:[e.jsx("h1",{className:"text-xl font-bold text-gray-800",children:"Hotel Admin"}),e.jsx("button",{onClick:()=>t(!1),className:"lg:hidden p-1 rounded-md text-gray-500 hover:text-gray-700",children:e.jsx(M,{className:"w-6 h-6"})})]}),e.jsx("nav",{className:"mt-6 px-4",children:c.map(s=>e.jsxs("button",{onClick:()=>{o(s.path),t(!1)},className:`w-full flex items-center px-4 py-3 mb-2 text-left rounded-lg transition-colors ${d.pathname===s.path?"bg-blue-100 text-blue-700 border-r-2 border-blue-700":"text-gray-700 hover:bg-gray-100"}`,children:[e.jsx(s.icon,{className:"w-5 h-5 mr-3"}),s.label]},s.id))}),e.jsxs("div",{className:"mt-8 px-4",children:[e.jsx("h3",{className:"text-sm font-semibold text-gray-600 mb-4 px-4",children:"Quick Stats"}),e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"bg-gray-50 rounded-lg p-3",children:[e.jsx("p",{className:"text-xs text-gray-600",children:"Revenue"}),e.jsxs("p",{className:"text-sm font-semibold",children:["₹",i.toLocaleString()]})]}),e.jsxs("div",{className:"bg-gray-50 rounded-lg p-3",children:[e.jsx("p",{className:"text-xs text-gray-600",children:"Bookings"}),e.jsx("p",{className:"text-sm font-semibold",children:r})]})]})]})]}),n&&e.jsx("div",{className:"fixed inset-0 bg-gray-600 bg-opacity-50 z-40 lg:hidden",onClick:()=>t(!1)}),e.jsxs("div",{className:"flex-1 flex flex-col overflow-hidden",children:[e.jsx("header",{className:"bg-white shadow-sm border-b border-gray-200",children:e.jsxs("div",{className:"flex items-center justify-between px-6 py-4",children:[e.jsx("button",{onClick:()=>t(!0),className:"lg:hidden p-2 rounded-md text-gray-500 hover:text-gray-700",children:e.jsx(N,{className:"w-6 h-6"})}),e.jsxs("div",{className:"flex items-center space-x-4",children:[e.jsx("div",{className:"hidden md:block text-sm text-gray-600",children:"Welcome back, Admin"}),e.jsx("div",{className:"w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center",children:e.jsx("span",{className:"text-white text-sm font-semibold",children:"A"})})]}),e.jsx("button",{onClick:()=>{localStorage.removeItem("admintoken"),window.location.reload()},className:"text-sm font-medium text-gray-700 hover:text-red-600",children:"Logout"})]})}),e.jsx("main",{className:"flex-1 overflow-x-hidden overflow-y-auto bg-gray-100 p-6",children:e.jsx(p,{})})]})]})};export{R as default};
