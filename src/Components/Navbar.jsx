@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { assets } from "../assets/assests";
 import { HotelContext } from "../context/HotelContext";
 import { Link, NavLink } from "react-router-dom";
-import { MdOutlineFavorite } from "react-icons/md";
+import { MdOutlineFavorite,MdAdminPanelSettings } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
@@ -119,6 +119,17 @@ const Navbar = () => {
                       <MdOutlineFavorite />
                       Favourite
                     </li>
+                    <li
+                      className="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 cursor-pointer"
+                      onClick={() => {
+                        setProfileDropdownOpen(false);
+                        navigate("/admin-panel");
+                      }}
+                    >
+                      <MdAdminPanelSettings />
+                      Admin Panel
+                    </li>
+
                     <li
                       className="flex items-center gap-3 px-4 py-3 text-sm text-red-600 hover:bg-red-50 cursor-pointer"
                       onClick={() => handleLogout()}
