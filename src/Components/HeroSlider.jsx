@@ -1,12 +1,15 @@
 import React, { useState, useEffect, useCallback, useRef, useMemo } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { slides } from "../assets/assests";
+import { useNavigate } from "react-router-dom";
 
 const HeroSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const slideCount = useMemo(() => slides.length, []);
   const autoplayRef = useRef(null);
+  const navigate = useNavigate();
+
 
   // Auto play
   useEffect(() => {
@@ -79,9 +82,12 @@ const HeroSlider = () => {
             <p className="text-white/90 text-base sm:text-lg lg:text-xl max-w-2xl mb-6 leading-relaxed">
               {slides[currentSlide].description}
             </p>
-            <button className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-full font-semibold text-base shadow-lg transition-colors duration-300">
+            <button
+              onClick={() => navigate("/rooms")}
+              className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-full font-semibold text-base shadow-lg transition-colors duration-300">
               Book Your Stay
             </button>
+
           </div>
         </div>
       </div>
