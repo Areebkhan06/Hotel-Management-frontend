@@ -3,12 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+"scripts": {
+  "dev": "vite",
+  "build": "vite build && copy dist\\index.html dist\\404.html",
+  "lint": "eslint .",
+  "preview": "vite preview"
+}
+
   "dependencies": {
     "@react-spring/web": "^10.0.1",
     "@tailwindcss/vite": "^4.1.12",
