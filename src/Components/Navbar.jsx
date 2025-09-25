@@ -123,7 +123,7 @@ const Navbar = () => {
                       className="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 cursor-pointer"
                       onClick={() => {
                         setProfileDropdownOpen(false);
-                        navigate("/admin-pannel");
+                        navigate("/admin-panel");
                       }}
                     >
                       <MdAdminPanelSettings />
@@ -251,6 +251,46 @@ const Navbar = () => {
                     />
                   </svg>
                   Bookings
+                </Link>
+                <Link
+                  to="/admin-pannel"
+                  className="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50 transition"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <svg
+                    className="w-5 h-5 text-blue-500"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M8 7V3a1 1 0 011-1h6a1 1 0 011 1v4h3a1 1 0 011 1v8a1 1 0 01-1 1H5a1 1 0 01-1-1V8a1 1 0 011-1h3z"
+                    />
+                  </svg>
+                  Admin Pannel
+                </Link>
+                <Link
+                  to="/favourite"
+                  className="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50 transition"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <svg
+                    className="w-5 h-5 text-blue-500"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M8 7V3a1 1 0 011-1h6a1 1 0 011 1v4h3a1 1 0 011 1v8a1 1 0 01-1 1H5a1 1 0 01-1-1V8a1 1 0 011-1h3z"
+                    />
+                  </svg>
+                  favourite
                 </Link>
 
                 <div
