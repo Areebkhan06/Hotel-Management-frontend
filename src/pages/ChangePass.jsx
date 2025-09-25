@@ -48,6 +48,7 @@ const ChangePass = () => {
 
       if (data.success) {
         toast.success(data.message);
+        navigate("/login");
         window.location.href = "/login";
       } else {
         toast.error(data.message);
