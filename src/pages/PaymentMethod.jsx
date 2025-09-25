@@ -129,6 +129,7 @@ const PaymentMethod = () => {
 
             if (verify.data.success) {
               alert("✅ Payment Successful!");
+              navigate("/bookings");
               window.location.href("/bookings");
             } else {
               alert("❌ Payment verification failed");
