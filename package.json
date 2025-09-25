@@ -8,7 +8,7 @@
   "build": "vite build && copy dist\\index.html dist\\404.html",
   "lint": "eslint .",
   "preview": "vite preview"
-}
+},
 
   "dependencies": {
     "@react-spring/web": "^10.0.1",
