@@ -6,7 +6,7 @@ import { BrowserRouter } from "react-router-dom"; // ✅ Correct import
 import HotelContextProvider from "./context/HotelContext.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
+   <BrowserRouter basename="/">
     <HotelContextProvider>
       <App />
     </HotelContextProvider>
